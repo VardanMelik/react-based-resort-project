@@ -1,40 +1,21 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primaryColor: #af9a7d;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 3px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-/* --------------------------------------------------------------
-
+/* globals */
 body {
   padding-top: 66px;
   color: var(--mainBlack);
@@ -105,7 +86,8 @@ h6 {
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
 }
-
+/* end of globals */
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -172,7 +154,8 @@ h6 {
     padding: 0.5rem 0;
   }
 }
-
+/* end of navbar */
+/* Hero */
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
@@ -185,7 +168,8 @@ h6 {
   background-image: url("./images/room-2.jpeg");
   min-height: 60vh;
 }
-
+/* End of Hero */
+/* Banner */
 .banner {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
@@ -224,7 +208,8 @@ h6 {
     font-size: 4rem;
   }
 }
-
+/* End of Banner */
+/* Title */
 .section-title {
   text-align: center;
   margin-bottom: 4rem;
@@ -241,7 +226,9 @@ h6 {
   margin: 0 auto;
   background: var(--primaryColor);
 }
+/* end of Title */
 
+/* services */
 .services {
   padding: 5rem 0;
 }
@@ -282,7 +269,8 @@ h6 {
     width: 100%;
   }
 }
-
+/*end of services */
+/* featured rooms */
 
 .featured-rooms {
   padding: 5rem 0;
@@ -307,7 +295,8 @@ h6 {
     max-width: 1170px;
   }
 }
-
+/* end pf featured rooms */
+/* room */
 .room {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
@@ -369,7 +358,8 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
-
+/* end of room  */
+/* single room*/
 
 .single-room {
   padding: 5rem 0 0 0;
@@ -443,7 +433,8 @@ h6 {
     padding-left: 3rem;
   }
 }
-
+/* end of single room*/
+/* roomlist */
 .roomslist {
   padding: 5rem 0;
 }
@@ -467,7 +458,8 @@ h6 {
     max-width: 1170px;
   }
 }
-
+/* end of roomlist */
+/*  rooms fitler*/
 .filter-container {
   padding: 5rem 0;
 }
@@ -518,5 +510,4 @@ h6 {
     max-width: 1170px;
   }
 }
-
------------------------------------------------------------------  */
+/* end of rooms fitler*/
